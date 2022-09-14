@@ -12,3 +12,5 @@ This allows `ntpd` to query the configured pool servers in order to set the corr
 The last thing the script does is restarting the NTP service.
 
 The script should run on most UNIX systems, it doesn't use any specialized tools. Remember to run the script with **sudo** permissions as most of the commands will only work with root privileges!
+
+I mainly use this script in order to easily reset my [PiHole's](https://pi-hole.net/) clock after the Raspberry Pi i'm using to host it has been shut down for more than one hour. This usually causes the PiHole to not be able to resolve hostnames (likely because of DNSSEC issues).
